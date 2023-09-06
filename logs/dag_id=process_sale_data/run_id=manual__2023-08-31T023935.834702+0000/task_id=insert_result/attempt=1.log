@@ -1,0 +1,19 @@
+[2023-08-31T02:39:40.289+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sale_data.insert_result manual__2023-08-31T02:39:35.834702+00:00 [queued]>
+[2023-08-31T02:39:40.297+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sale_data.insert_result manual__2023-08-31T02:39:35.834702+00:00 [queued]>
+[2023-08-31T02:39:40.298+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-31T02:39:40.308+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_result> on 2023-08-31 02:39:35.834702+00:00
+[2023-08-31T02:39:40.313+0000] {standard_task_runner.py:57} INFO - Started process 2098 to run task
+[2023-08-31T02:39:40.315+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'process_sale_data', 'insert_result', 'manual__2023-08-31T02:39:35.834702+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpc9mbcimf']
+[2023-08-31T02:39:40.317+0000] {standard_task_runner.py:85} INFO - Job 136: Subtask insert_result
+[2023-08-31T02:39:40.355+0000] {task_command.py:410} INFO - Running <TaskInstance: process_sale_data.insert_result manual__2023-08-31T02:39:35.834702+00:00 [running]> on host 888526fa4a36
+[2023-08-31T02:39:40.507+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sale_data' AIRFLOW_CTX_TASK_ID='insert_result' AIRFLOW_CTX_EXECUTION_DATE='2023-08-31T02:39:35.834702+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-31T02:39:35.834702+00:00'
+[2023-08-31T02:39:40.669+0000] {postgres.py:159} INFO - Running copy expert: COPY consumption_alcoholic_20230831 FROM stdin WITH CSV HEADER DELIMITER AS ',';, filename: /opt/***/dags/consumption_alcoholic_20230831.csv
+[2023-08-31T02:39:40.678+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-08-31T02:39:40.690+0000] {postgres.py:159} INFO - Running copy expert: COPY consumption_cereals_bakery_20230831 FROM stdin WITH CSV HEADER DELIMITER AS ',';, filename: /opt/***/dags/consumption_cereals_bakery_20230831.csv
+[2023-08-31T02:39:40.698+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-08-31T02:39:40.709+0000] {postgres.py:159} INFO - Running copy expert: COPY consumption_meats_poultry_20230831 FROM stdin WITH CSV HEADER DELIMITER AS ',';, filename: /opt/***/dags/consumption_meats_poultry_20230831.csv
+[2023-08-31T02:39:40.717+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-08-31T02:39:40.730+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-08-31T02:39:40.737+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=process_sale_data, task_id=insert_result, execution_date=20230831T023935, start_date=20230831T023940, end_date=20230831T023940
+[2023-08-31T02:39:40.769+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-31T02:39:40.786+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

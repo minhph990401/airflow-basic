@@ -1,0 +1,33 @@
+[2023-08-30T08:23:14.536+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sale_data.insert_result manual__2023-08-30T08:23:08.794149+00:00 [queued]>
+[2023-08-30T08:23:14.544+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sale_data.insert_result manual__2023-08-30T08:23:08.794149+00:00 [queued]>
+[2023-08-30T08:23:14.545+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-30T08:23:14.560+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_result> on 2023-08-30 08:23:08.794149+00:00
+[2023-08-30T08:23:14.609+0000] {standard_task_runner.py:57} INFO - Started process 332 to run task
+[2023-08-30T08:23:14.614+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'process_sale_data', 'insert_result', 'manual__2023-08-30T08:23:08.794149+00:00', '--job-id', '89', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpxy2d9joo']
+[2023-08-30T08:23:14.616+0000] {standard_task_runner.py:85} INFO - Job 89: Subtask insert_result
+[2023-08-30T08:23:14.656+0000] {task_command.py:410} INFO - Running <TaskInstance: process_sale_data.insert_result manual__2023-08-30T08:23:08.794149+00:00 [running]> on host 888526fa4a36
+[2023-08-30T08:23:14.723+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sale_data' AIRFLOW_CTX_TASK_ID='insert_result' AIRFLOW_CTX_EXECUTION_DATE='2023-08-30T08:23:08.794149+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-30T08:23:08.794149+00:00'
+[2023-08-30T08:23:14.780+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-08-30T08:23:14.928+0000] {postgres.py:159} INFO - Running copy expert: COPY consumption_alcoholic_20230830 FROM '/opt/***/dags/consumption_alcoholic_20230830.csv WITH CSV HEADER DELIMITER AS ',';, filename: /opt/***/dags/consumption_alcoholic_20230830.csv
+[2023-08-30T08:23:14.936+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-08-30T08:23:14.941+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/py_callables.py", line 60, in insert_result
+    ,alcoholic_file_name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/hooks/postgres.py", line 167, in copy_expert
+    cur.copy_expert(sql, file)
+psycopg2.errors.SyntaxError: syntax error at or near ","
+LINE 1: ...ion_alcoholic_20230830.csv WITH CSV HEADER DELIMITER AS ',';
+                                                                    ^
+
+[2023-08-30T08:23:14.953+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=process_sale_data, task_id=insert_result, execution_date=20230830T082308, start_date=20230830T082314, end_date=20230830T082314
+[2023-08-30T08:23:14.963+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 89 for task insert_result (syntax error at or near ","
+LINE 1: ...ion_alcoholic_20230830.csv WITH CSV HEADER DELIMITER AS ',';
+                                                                    ^
+; 332)
+[2023-08-30T08:23:14.987+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-30T08:23:15.001+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

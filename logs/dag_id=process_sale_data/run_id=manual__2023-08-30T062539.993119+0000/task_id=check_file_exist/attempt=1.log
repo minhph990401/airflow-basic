@@ -1,0 +1,10 @@
+[2023-08-30T06:25:41.138+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sale_data.check_file_exist manual__2023-08-30T06:25:39.993119+00:00 [queued]>
+[2023-08-30T06:25:41.145+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sale_data.check_file_exist manual__2023-08-30T06:25:39.993119+00:00 [queued]>
+[2023-08-30T06:25:41.146+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-30T06:25:41.160+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): check_file_exist> on 2023-08-30 06:25:39.993119+00:00
+[2023-08-30T06:25:41.167+0000] {standard_task_runner.py:57} INFO - Started process 496 to run task
+[2023-08-30T06:25:41.170+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'process_sale_data', 'check_file_exist', 'manual__2023-08-30T06:25:39.993119+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmp0mm9xxgv']
+[2023-08-30T06:25:41.171+0000] {standard_task_runner.py:85} INFO - Job 20: Subtask check_file_exist
+[2023-08-30T06:25:41.225+0000] {task_command.py:410} INFO - Running <TaskInstance: process_sale_data.check_file_exist manual__2023-08-30T06:25:39.993119+00:00 [running]> on host 888526fa4a36
+[2023-08-30T06:25:41.303+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sale_data' AIRFLOW_CTX_TASK_ID='check_file_exist' AIRFLOW_CTX_EXECUTION_DATE='2023-08-30T06:25:39.993119+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-30T06:25:39.993119+00:00'
+[2023-08-30T06:25:41.304+0000] {logging_mixin.py:149} INFO - File not found, try again in 5 minutes

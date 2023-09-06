@@ -1,0 +1,98 @@
+[2023-08-30T07:39:40.531+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sale_data.create_result_table manual__2023-08-30T07:39:35.916933+00:00 [queued]>
+[2023-08-30T07:39:40.538+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sale_data.create_result_table manual__2023-08-30T07:39:35.916933+00:00 [queued]>
+[2023-08-30T07:39:40.539+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-30T07:39:40.551+0000] {taskinstance.py:1327} INFO - Executing <Task(PostgresOperator): create_result_table> on 2023-08-30 07:39:35.916933+00:00
+[2023-08-30T07:39:40.556+0000] {standard_task_runner.py:57} INFO - Started process 2470 to run task
+[2023-08-30T07:39:40.559+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'process_sale_data', 'create_result_table', 'manual__2023-08-30T07:39:35.916933+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmplz4x2jo3']
+[2023-08-30T07:39:40.560+0000] {standard_task_runner.py:85} INFO - Job 49: Subtask create_result_table
+[2023-08-30T07:39:40.600+0000] {task_command.py:410} INFO - Running <TaskInstance: process_sale_data.create_result_table manual__2023-08-30T07:39:35.916933+00:00 [running]> on host 888526fa4a36
+[2023-08-30T07:39:40.678+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sale_data' AIRFLOW_CTX_TASK_ID='create_result_table' AIRFLOW_CTX_EXECUTION_DATE='2023-08-30T07:39:35.916933+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-30T07:39:35.916933+00:00'
+[2023-08-30T07:39:40.679+0000] {sql.py:265} INFO - Executing: CREATE TABLE IF NOT EXISTS consumption_alcoholic_20230830(
+                category VARCHAR NOT NULL,
+                sub_category  VARCHAR NOT NULL,
+                aggregation_date  DATE NOT NULL
+                millions_of_dollar INT NOT NULL,
+                pipeline_exc_datetime DATE NOT NULL
+            );
+            CREATE TABLE IF NOT EXISTS consumption_cereals_bakery_20230830(
+                category VARCHAR NOT NULL,
+                sub_category  VARCHAR NOT NULL,
+                aggregation_date  DATE NOT NULL
+                millions_of_dollar INT NOT NULL,
+                pipeline_exc_datetime DATE NOT NULL
+            );
+            CREATE TABLE IF NOT EXISTS consumption_meats_poultry_20230830(
+                category VARCHAR NOT NULL,
+                sub_category  VARCHAR NOT NULL,
+                aggregation_date  DATE NOT NULL
+                millions_of_dollar INT NOT NULL,
+                pipeline_exc_datetime DATE NOT NULL
+            );      
+            COPY consumption_alcoholic_20230830
+                FROM 'consumption_alcoholic_20230830.csv'
+                DELIMITER ','
+                CSV HEADER;
+
+            COPY consumption_cereals_bakery_20230830
+                FROM 'consumption_cereals_bakery_20230830.csv'
+                DELIMITER ','
+                CSV HEADER;
+            COPY consumption_meats_poultry_20230830
+                FROM 'consumption_meats_poultry_20230830.csv'
+                DELIMITER ','
+                CSV HEADER;
+[2023-08-30T07:39:40.687+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-08-30T07:39:40.736+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-08-30T07:39:40.740+0000] {sql.py:375} INFO - Running statement: CREATE TABLE IF NOT EXISTS consumption_alcoholic_20230830(
+                category VARCHAR NOT NULL,
+                sub_category  VARCHAR NOT NULL,
+                aggregation_date  DATE NOT NULL
+                millions_of_dollar INT NOT NULL,
+                pipeline_exc_datetime DATE NOT NULL
+            );
+            CREATE TABLE IF NOT EXISTS consumption_cereals_bakery_20230830(
+                category VARCHAR NOT NULL,
+                sub_category  VARCHAR NOT NULL,
+                aggregation_date  DATE NOT NULL
+                millions_of_dollar INT NOT NULL,
+                pipeline_exc_datetime DATE NOT NULL
+            );
+            CREATE TABLE IF NOT EXISTS consumption_meats_poultry_20230830(
+                category VARCHAR NOT NULL,
+                sub_category  VARCHAR NOT NULL,
+                aggregation_date  DATE NOT NULL
+                millions_of_dollar INT NOT NULL,
+                pipeline_exc_datetime DATE NOT NULL
+            );      
+            COPY consumption_alcoholic_20230830
+                FROM 'consumption_alcoholic_20230830.csv'
+                DELIMITER ','
+                CSV HEADER;
+
+            COPY consumption_cereals_bakery_20230830
+                FROM 'consumption_cereals_bakery_20230830.csv'
+                DELIMITER ','
+                CSV HEADER;
+            COPY consumption_meats_poultry_20230830
+                FROM 'consumption_meats_poultry_20230830.csv'
+                DELIMITER ','
+                CSV HEADER;, parameters: None
+[2023-08-30T07:39:40.742+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 277, in execute
+    **extra_kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 349, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/hooks/sql.py", line 380, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.SyntaxError: syntax error at or near "millions_of_dollar"
+LINE 5:                 millions_of_dollar INT NOT NULL,
+                        ^
+
+[2023-08-30T07:39:40.750+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=process_sale_data, task_id=create_result_table, execution_date=20230830T073935, start_date=20230830T073940, end_date=20230830T073940
+[2023-08-30T07:39:40.871+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 49 for task create_result_table (syntax error at or near "millions_of_dollar"
+LINE 5:                 millions_of_dollar INT NOT NULL,
+                        ^
+; 2470)
+[2023-08-30T07:39:40.892+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-30T07:39:40.907+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

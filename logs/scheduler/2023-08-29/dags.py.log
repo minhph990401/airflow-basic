@@ -1,0 +1,618 @@
+[2023-08-29T06:25:02.607+0000] {processor.py:157} INFO - Started process (PID=32) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:25:02.608+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:25:02.610+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:25:02.610+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:25:02.660+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:25:02.654+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 4, in <module>
+    from dags.py_callables import check_file_exists, process_raw_data, create_result_tables, mark_task_fail, branch
+  File "/opt/airflow/dags/dags.py", line 4, in <module>
+    from dags.py_callables import check_file_exists, process_raw_data, create_result_tables, mark_task_fail, branch
+ModuleNotFoundError: No module named 'dags.py_callables'; 'dags' is not a package
+[2023-08-29T06:25:02.662+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:25:02.681+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.077 seconds
+[2023-08-29T06:25:32.872+0000] {processor.py:157} INFO - Started process (PID=60) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:25:32.873+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:25:32.874+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:25:32.874+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:25:32.908+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:25:32.902+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 4, in <module>
+    from dags.py_callables import check_file_exists, process_raw_data, create_result_tables, mark_task_fail, branch
+  File "/opt/airflow/dags/dags.py", line 4, in <module>
+    from dags.py_callables import check_file_exists, process_raw_data, create_result_tables, mark_task_fail, branch
+ModuleNotFoundError: No module named 'dags.py_callables'; 'dags' is not a package
+[2023-08-29T06:25:32.910+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:25:32.928+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.058 seconds
+[2023-08-29T06:26:01.224+0000] {processor.py:157} INFO - Started process (PID=79) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:26:01.225+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:26:01.226+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:26:01.226+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:26:02.172+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:26:02.163+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 7, in <module>
+    pipeline_exc_date = datetime.datetime.now().strftime("%Y%m%d").astype(str)
+AttributeError: 'str' object has no attribute 'astype'
+[2023-08-29T06:26:02.174+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:26:02.190+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.967 seconds
+[2023-08-29T06:26:16.379+0000] {processor.py:157} INFO - Started process (PID=101) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:26:16.380+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:26:16.381+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:26:16.380+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:26:16.714+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:26:16.706+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 10, in <module>
+    start_date='2023-08-28', catchup=False) as dag:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 473, in __init__
+    if start_date and start_date.tzinfo:
+AttributeError: 'str' object has no attribute 'tzinfo'
+[2023-08-29T06:26:16.716+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:26:16.738+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.362 seconds
+[2023-08-29T06:26:47.078+0000] {processor.py:157} INFO - Started process (PID=141) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:26:47.079+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:26:47.080+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:26:47.079+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:26:47.505+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:26:47.495+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 10, in <module>
+    start_date='2023-08-28', catchup=False) as dag:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 473, in __init__
+    if start_date and start_date.tzinfo:
+AttributeError: 'str' object has no attribute 'tzinfo'
+[2023-08-29T06:26:47.507+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:26:47.544+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.472 seconds
+[2023-08-29T06:27:17.837+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:27:17.838+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:27:17.839+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:27:17.838+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:27:18.168+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:27:18.158+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 10, in <module>
+    start_date='2023-08-28', catchup=False) as dag:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 473, in __init__
+    if start_date and start_date.tzinfo:
+AttributeError: 'str' object has no attribute 'tzinfo'
+[2023-08-29T06:27:18.171+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:27:18.195+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.361 seconds
+[2023-08-29T06:27:48.504+0000] {processor.py:157} INFO - Started process (PID=212) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:27:48.506+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:27:48.506+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:27:48.506+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:27:48.883+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:27:48.874+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 10, in <module>
+    start_date='2023-08-28', catchup=False) as dag:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 473, in __init__
+    if start_date and start_date.tzinfo:
+AttributeError: 'str' object has no attribute 'tzinfo'
+[2023-08-29T06:27:48.885+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:27:48.905+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.408 seconds
+[2023-08-29T06:28:00.059+0000] {processor.py:157} INFO - Started process (PID=234) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:28:00.060+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:28:00.061+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:28:00.061+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:28:00.445+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:28:00.436+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 10, in <module>
+    start_date='2023-08-30', catchup=False) as dag:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 473, in __init__
+    if start_date and start_date.tzinfo:
+AttributeError: 'str' object has no attribute 'tzinfo'
+[2023-08-29T06:28:00.446+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:28:00.465+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.409 seconds
+[2023-08-29T06:28:30.762+0000] {processor.py:157} INFO - Started process (PID=265) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:28:30.763+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:28:30.764+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:28:30.764+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:28:31.126+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:28:31.119+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 10, in <module>
+    start_date='2023-08-30', catchup=False) as dag:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 473, in __init__
+    if start_date and start_date.tzinfo:
+AttributeError: 'str' object has no attribute 'tzinfo'
+[2023-08-29T06:28:31.128+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:28:31.147+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.388 seconds
+[2023-08-29T06:29:01.400+0000] {processor.py:157} INFO - Started process (PID=306) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:29:01.401+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:29:01.402+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:29:01.402+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:29:01.719+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:29:01.711+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 10, in <module>
+    start_date='2023-08-30', catchup=False) as dag:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py", line 473, in __init__
+    if start_date and start_date.tzinfo:
+AttributeError: 'str' object has no attribute 'tzinfo'
+[2023-08-29T06:29:01.721+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:29:01.737+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.340 seconds
+[2023-08-29T06:29:05.461+0000] {processor.py:157} INFO - Started process (PID=319) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:29:05.462+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:29:05.462+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:29:05.462+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:29:05.843+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:29:05.836+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 10, in <module>
+    start_date=datetime(2023, 8, 30), catchup=False) as dag:
+TypeError: 'module' object is not callable
+[2023-08-29T06:29:05.845+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:29:05.860+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.402 seconds
+[2023-08-29T06:29:33.101+0000] {processor.py:157} INFO - Started process (PID=350) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:29:33.102+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:29:33.103+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:29:33.103+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:29:33.542+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:29:33.531+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 7, in <module>
+    pipeline_exc_date = datetime.datetime.now().strftime("%Y%m%d")
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+[2023-08-29T06:29:33.544+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:29:33.564+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.471 seconds
+[2023-08-29T06:30:03.928+0000] {processor.py:157} INFO - Started process (PID=390) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:30:03.930+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:30:03.931+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:30:03.931+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:30:04.276+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:30:04.266+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 7, in <module>
+    pipeline_exc_date = datetime.datetime.now().strftime("%Y%m%d")
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+[2023-08-29T06:30:04.278+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:30:04.297+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.371 seconds
+[2023-08-29T06:30:18.083+0000] {processor.py:157} INFO - Started process (PID=412) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:30:18.086+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:30:18.087+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:30:18.087+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:30:18.485+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:30:18.476+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 29, in <module>
+    python_callabe=process_raw_data
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 412, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2023-08-29T06:30:18.487+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:30:18.504+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.425 seconds
+[2023-08-29T06:30:48.732+0000] {processor.py:157} INFO - Started process (PID=453) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:30:48.733+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:30:48.734+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:30:48.734+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:30:49.173+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:30:49.165+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 29, in <module>
+    python_callabe=process_raw_data
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 412, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'python_callable'
+[2023-08-29T06:30:49.175+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:30:49.192+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.464 seconds
+[2023-08-29T06:30:56.305+0000] {processor.py:157} INFO - Started process (PID=466) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:30:56.306+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:30:56.306+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:30:56.306+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:30:56.646+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:30:56.637+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 62, in <module>
+    """
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 85, in __init__
+    super().__init__(conn_id=postgres_conn_id, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 231, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/common/sql/operators/sql.py", line 133, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 429, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 806, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/task_group.py", line 226, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'create_result_table' has already been added to the DAG
+[2023-08-29T06:30:56.646+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:30:56.669+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.367 seconds
+[2023-08-29T06:31:22.996+0000] {processor.py:157} INFO - Started process (PID=497) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:31:22.997+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:31:23.002+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:31:23.001+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:31:23.572+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:31:23.797+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:31:23.797+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:process_sale_data
+[2023-08-29T06:31:23.810+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:31:23.810+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:process_sale_data
+[2023-08-29T06:31:23.824+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:31:23.824+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:process_sale_data
+[2023-08-29T06:31:23.839+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:31:23.839+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:31:23.854+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:31:23.853+0000] {dag.py:2747} INFO - Creating ORM DAG for process_sale_data
+[2023-08-29T06:31:23.987+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:31:23.987+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:31:24.012+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 1.019 seconds
+[2023-08-29T06:31:54.267+0000] {processor.py:157} INFO - Started process (PID=538) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:31:54.269+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:31:54.270+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:31:54.269+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:31:54.643+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:31:54.669+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:31:54.668+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:31:54.777+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:31:54.776+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:31:54.793+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.531 seconds
+[2023-08-29T06:32:25.107+0000] {processor.py:157} INFO - Started process (PID=570) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:32:25.108+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:32:25.109+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:32:25.109+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:32:25.432+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:32:25.457+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:32:25.457+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:32:25.478+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:32:25.478+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:32:25.495+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.391 seconds
+[2023-08-29T06:32:55.787+0000] {processor.py:157} INFO - Started process (PID=610) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:32:55.788+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:32:55.789+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:32:55.789+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:32:56.103+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:32:56.127+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:32:56.127+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:32:56.146+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:32:56.146+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:32:56.164+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.379 seconds
+[2023-08-29T06:33:26.496+0000] {processor.py:157} INFO - Started process (PID=641) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:33:26.497+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:33:26.498+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:33:26.498+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:33:26.804+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:33:26.829+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:33:26.829+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:33:26.851+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:33:26.851+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:33:26.869+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.376 seconds
+[2023-08-29T06:33:44.730+0000] {processor.py:157} INFO - Started process (PID=672) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:33:44.731+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:33:44.732+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:33:44.732+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:33:45.076+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:33:45.327+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:33:45.327+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:33:45.349+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:33:45.348+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:33:45.378+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.650 seconds
+[2023-08-29T06:34:15.682+0000] {processor.py:157} INFO - Started process (PID=710) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:34:15.683+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:34:15.684+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:34:15.684+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:34:16.116+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:34:16.160+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:34:16.160+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:34:16.195+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:34:16.195+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:34:16.216+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.537 seconds
+[2023-08-29T06:34:46.571+0000] {processor.py:157} INFO - Started process (PID=743) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:34:46.572+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:34:46.572+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:34:46.572+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:34:46.885+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:34:46.910+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:34:46.909+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:34:46.932+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:34:46.931+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:34:47.034+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.465 seconds
+[2023-08-29T06:35:17.333+0000] {processor.py:157} INFO - Started process (PID=783) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:35:17.335+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:35:17.336+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:35:17.336+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:35:17.710+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:35:17.734+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:35:17.734+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:35:17.844+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:35:17.844+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:35:17.861+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.531 seconds
+[2023-08-29T06:35:48.134+0000] {processor.py:157} INFO - Started process (PID=815) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:35:48.135+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:35:48.136+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:35:48.136+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:35:48.453+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:35:48.476+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:35:48.476+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:35:48.502+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:35:48.501+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:35:48.517+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.385 seconds
+[2023-08-29T06:36:18.955+0000] {processor.py:157} INFO - Started process (PID=856) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:36:18.959+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:36:18.962+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:36:18.962+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:36:20.100+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:36:20.128+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:36:20.128+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:36:20.155+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:36:20.155+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:36:20.180+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 1.230 seconds
+[2023-08-29T06:36:50.257+0000] {processor.py:157} INFO - Started process (PID=888) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:36:50.258+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:36:50.259+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:36:50.259+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:36:50.600+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:36:50.635+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:36:50.634+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:36:50.670+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:36:50.669+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:36:50.697+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.443 seconds
+[2023-08-29T06:37:20.766+0000] {processor.py:157} INFO - Started process (PID=928) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:37:20.767+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:37:20.768+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:37:20.768+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:37:21.106+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:37:21.136+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:37:21.135+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:37:21.158+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:37:21.158+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:37:21.176+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.412 seconds
+[2023-08-29T06:37:51.223+0000] {processor.py:157} INFO - Started process (PID=959) to work on /opt/airflow/dags/dags.py
+[2023-08-29T06:37:51.224+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T06:37:51.225+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:37:51.225+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T06:37:51.591+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T06:37:51.616+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:37:51.616+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T06:37:51.640+0000] {logging_mixin.py:149} INFO - [2023-08-29T06:37:51.640+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T06:37:51.767+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.547 seconds
+[2023-08-29T07:08:47.224+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:08:47.225+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:08:47.226+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:08:47.226+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:08:48.396+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:08:48.565+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:08:48.565+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:08:48.588+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:08:48.587+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T07:08:48.611+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 1.390 seconds
+[2023-08-29T07:09:18.908+0000] {processor.py:157} INFO - Started process (PID=70) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:09:18.910+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:09:18.911+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:09:18.911+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:09:19.403+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:09:19.428+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:09:19.428+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:09:19.449+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:09:19.448+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T07:09:19.468+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.564 seconds
+[2023-08-29T07:09:49.775+0000] {processor.py:157} INFO - Started process (PID=101) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:09:49.778+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:09:49.779+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:09:49.779+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:09:50.317+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:09:50.344+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:09:50.344+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:09:50.367+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:09:50.367+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-30T00:00:00+00:00, run_after=2023-08-31T00:00:00+00:00
+[2023-08-29T07:09:50.389+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.618 seconds
+[2023-08-29T07:10:07.292+0000] {processor.py:157} INFO - Started process (PID=133) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:10:07.293+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:10:07.293+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:10:07.293+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:10:07.798+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:10:07.905+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:10:07.904+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:10:07.928+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:10:07.928+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:10:07.953+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.665 seconds
+[2023-08-29T07:10:38.259+0000] {processor.py:157} INFO - Started process (PID=164) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:10:38.260+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:10:38.260+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:10:38.260+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:10:38.697+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:10:38.719+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:10:38.718+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:10:38.739+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:10:38.738+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:10:38.758+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.503 seconds
+[2023-08-29T07:11:07.055+0000] {processor.py:157} INFO - Started process (PID=204) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:11:07.056+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:11:07.060+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:11:07.059+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:11:07.632+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:11:07.803+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:11:07.803+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:11:07.832+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:11:07.831+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:11:07.866+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.815 seconds
+[2023-08-29T07:11:38.218+0000] {processor.py:157} INFO - Started process (PID=235) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:11:38.219+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:11:38.220+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:11:38.220+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:11:38.585+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:11:38.611+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:11:38.610+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:11:38.631+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:11:38.631+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:11:38.653+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.437 seconds
+[2023-08-29T07:12:08.992+0000] {processor.py:157} INFO - Started process (PID=276) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:12:08.994+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:12:08.995+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:12:08.995+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:12:09.560+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:12:09.599+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:12:09.597+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:12:09.644+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:12:09.644+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:12:09.666+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.678 seconds
+[2023-08-29T07:12:39.825+0000] {processor.py:157} INFO - Started process (PID=307) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:12:39.826+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:12:39.827+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:12:39.827+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:12:40.137+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:12:40.163+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:12:40.163+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:12:40.183+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:12:40.183+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:12:40.201+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.378 seconds
+[2023-08-29T07:13:10.242+0000] {processor.py:157} INFO - Started process (PID=347) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:13:10.243+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:13:10.244+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:13:10.244+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:13:10.623+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:13:10.649+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:13:10.649+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:13:10.671+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:13:10.671+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:13:10.693+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.454 seconds
+[2023-08-29T07:13:40.842+0000] {processor.py:157} INFO - Started process (PID=378) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:13:40.843+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:13:40.844+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:13:40.843+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:13:41.145+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:13:41.170+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:13:41.170+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:13:41.190+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:13:41.189+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:13:41.206+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.367 seconds
+[2023-08-29T07:14:11.301+0000] {processor.py:157} INFO - Started process (PID=418) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:14:11.303+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:14:11.305+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:14:11.305+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:14:11.661+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:14:11.685+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:14:11.685+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:14:11.704+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:14:11.704+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:14:11.723+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.425 seconds
+[2023-08-29T07:14:41.889+0000] {processor.py:157} INFO - Started process (PID=449) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:14:41.890+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:14:41.891+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:14:41.891+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:14:42.201+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:14:42.230+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:14:42.230+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:14:42.253+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:14:42.253+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:14:42.283+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.397 seconds
+[2023-08-29T07:15:12.617+0000] {processor.py:157} INFO - Started process (PID=489) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:15:12.618+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:15:12.619+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:15:12.619+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:15:12.937+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:15:12.962+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:15:12.961+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:15:12.982+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:15:12.982+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:15:13.002+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.387 seconds
+[2023-08-29T07:15:43.304+0000] {processor.py:157} INFO - Started process (PID=520) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:15:43.306+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:15:43.307+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:15:43.307+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:15:43.651+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:15:43.677+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:15:43.676+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:15:43.698+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:15:43.698+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:15:43.718+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.416 seconds
+[2023-08-29T07:16:14.031+0000] {processor.py:157} INFO - Started process (PID=560) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:16:14.032+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:16:14.033+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:16:14.033+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:16:14.343+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:16:14.370+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:16:14.370+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:16:14.391+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:16:14.391+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:16:14.410+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.382 seconds
+[2023-08-29T07:16:44.720+0000] {processor.py:157} INFO - Started process (PID=591) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:16:44.722+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:16:44.723+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:16:44.723+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:16:45.035+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:16:45.061+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:16:45.060+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:16:45.081+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:16:45.081+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:16:45.101+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.383 seconds
+[2023-08-29T07:17:15.408+0000] {processor.py:157} INFO - Started process (PID=631) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:17:15.410+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:17:15.411+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:17:15.411+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:17:15.752+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:17:15.781+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:17:15.781+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:17:15.802+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:17:15.802+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:17:15.821+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.418 seconds
+[2023-08-29T07:17:46.155+0000] {processor.py:157} INFO - Started process (PID=669) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:17:46.157+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:17:46.158+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:17:46.158+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:17:46.546+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:17:46.570+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:17:46.570+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:17:46.596+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:17:46.596+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:17:46.618+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.465 seconds
+[2023-08-29T07:18:16.972+0000] {processor.py:157} INFO - Started process (PID=702) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:18:16.973+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:18:16.974+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:18:16.974+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:18:17.307+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:18:17.340+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:18:17.340+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:18:17.365+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:18:17.365+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:18:17.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.412 seconds
+[2023-08-29T07:18:47.708+0000] {processor.py:157} INFO - Started process (PID=742) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:18:47.710+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:18:47.711+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:18:47.711+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:18:48.122+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:18:48.144+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:18:48.144+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:18:48.164+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:18:48.164+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:18:48.179+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.474 seconds
+[2023-08-29T07:19:18.485+0000] {processor.py:157} INFO - Started process (PID=773) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:19:18.487+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:19:18.488+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:19:18.487+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:19:18.870+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:19:18.901+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:19:18.900+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:19:18.928+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:19:18.928+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:19:18.952+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.469 seconds
+[2023-08-29T07:19:49.275+0000] {processor.py:157} INFO - Started process (PID=813) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:19:49.276+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:19:49.277+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:19:49.277+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:19:49.590+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:19:49.616+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:19:49.616+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:19:49.636+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:19:49.636+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:19:49.655+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.382 seconds
+[2023-08-29T07:20:19.967+0000] {processor.py:157} INFO - Started process (PID=844) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:20:19.968+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:20:19.969+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:20:19.969+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:20:20.391+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:20:20.431+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:20:20.431+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:20:20.465+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:20:20.465+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:20:20.500+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.536 seconds
+[2023-08-29T07:20:50.752+0000] {processor.py:157} INFO - Started process (PID=885) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:20:50.754+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:20:50.755+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:20:50.754+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:20:51.115+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:20:51.144+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:20:51.143+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:20:51.168+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:20:51.168+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:20:51.187+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.437 seconds
+[2023-08-29T07:21:21.475+0000] {processor.py:157} INFO - Started process (PID=916) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:21:21.476+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:21:21.477+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:21:21.477+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:21:21.807+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:21:21.833+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:21:21.832+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:21:21.852+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:21:21.852+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:21:21.871+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.398 seconds
+[2023-08-29T07:21:52.196+0000] {processor.py:157} INFO - Started process (PID=956) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:21:52.197+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:21:52.197+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:21:52.197+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:21:52.593+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:21:52.617+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:21:52.617+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:21:52.637+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:21:52.637+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:21:52.657+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.464 seconds
+[2023-08-29T07:22:22.988+0000] {processor.py:157} INFO - Started process (PID=987) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:22:22.989+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:22:22.991+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:22:22.991+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:22:23.353+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:22:23.380+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:22:23.380+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:22:23.402+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:22:23.402+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:22:23.422+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.438 seconds
+[2023-08-29T07:22:53.787+0000] {processor.py:157} INFO - Started process (PID=1028) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:22:53.788+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:22:53.789+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:22:53.789+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:22:54.106+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:22:54.133+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:22:54.132+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:22:54.153+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:22:54.153+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:22:54.173+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.389 seconds
+[2023-08-29T07:23:24.443+0000] {processor.py:157} INFO - Started process (PID=1068) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:23:24.444+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:23:24.445+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:23:24.445+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:23:24.801+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:23:24.826+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:23:24.826+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:23:24.847+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:23:24.847+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:23:24.868+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.427 seconds
+[2023-08-29T07:23:55.279+0000] {processor.py:157} INFO - Started process (PID=1099) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:23:55.280+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:23:55.281+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:23:55.281+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:23:55.585+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:23:55.610+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:23:55.610+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:23:55.630+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:23:55.630+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:23:55.649+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.373 seconds
+[2023-08-29T07:24:25.986+0000] {processor.py:157} INFO - Started process (PID=1139) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:24:25.989+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:24:25.990+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:24:25.990+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:24:26.464+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:24:26.492+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:24:26.491+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:24:26.514+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:24:26.514+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:24:26.540+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.557 seconds
+[2023-08-29T07:24:56.824+0000] {processor.py:157} INFO - Started process (PID=1170) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:24:56.825+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:24:56.826+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:24:56.826+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:24:57.134+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:24:57.158+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:24:57.157+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:24:57.179+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:24:57.179+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:24:57.196+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.374 seconds
+[2023-08-29T07:25:27.483+0000] {processor.py:157} INFO - Started process (PID=1210) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:25:27.484+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:25:27.485+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:25:27.485+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:25:27.811+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:25:27.836+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:25:27.835+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:25:27.857+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:25:27.857+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:25:27.875+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.394 seconds
+[2023-08-29T07:25:58.165+0000] {processor.py:157} INFO - Started process (PID=1241) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:25:58.166+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:25:58.167+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:25:58.167+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:25:58.501+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:25:58.524+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:25:58.524+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:25:58.545+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:25:58.545+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:25:58.562+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.400 seconds
+[2023-08-29T07:26:28.822+0000] {processor.py:157} INFO - Started process (PID=1281) to work on /opt/airflow/dags/dags.py
+[2023-08-29T07:26:28.823+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-08-29T07:26:28.824+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:26:28.824+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-08-29T07:26:29.131+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-08-29T07:26:29.156+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:26:29.156+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-08-29T07:26:29.176+0000] {logging_mixin.py:149} INFO - [2023-08-29T07:26:29.176+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to 2023-08-29T00:00:00+00:00, run_after=2023-08-30T00:00:00+00:00
+[2023-08-29T07:26:29.195+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.376 seconds

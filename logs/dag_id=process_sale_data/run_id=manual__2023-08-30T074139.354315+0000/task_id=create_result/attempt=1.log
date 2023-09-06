@@ -1,0 +1,30 @@
+[2023-08-30T07:41:42.712+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sale_data.create_result manual__2023-08-30T07:41:39.354315+00:00 [queued]>
+[2023-08-30T07:41:42.720+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sale_data.create_result manual__2023-08-30T07:41:39.354315+00:00 [queued]>
+[2023-08-30T07:41:42.721+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-30T07:41:42.732+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): create_result> on 2023-08-30 07:41:39.354315+00:00
+[2023-08-30T07:41:42.737+0000] {standard_task_runner.py:57} INFO - Started process 2582 to run task
+[2023-08-30T07:41:42.742+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'process_sale_data', 'create_result', 'manual__2023-08-30T07:41:39.354315+00:00', '--job-id', '56', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpqzadf5bj']
+[2023-08-30T07:41:42.744+0000] {standard_task_runner.py:85} INFO - Job 56: Subtask create_result
+[2023-08-30T07:41:42.785+0000] {task_command.py:410} INFO - Running <TaskInstance: process_sale_data.create_result manual__2023-08-30T07:41:39.354315+00:00 [running]> on host 888526fa4a36
+[2023-08-30T07:41:42.854+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sale_data' AIRFLOW_CTX_TASK_ID='create_result' AIRFLOW_CTX_EXECUTION_DATE='2023-08-30T07:41:39.354315+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-30T07:41:39.354315+00:00'
+[2023-08-30T07:41:42.872+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/py_callables.py", line 48, in create_result_tables
+    df_alcoholic.to_csv('/opt/airflow/dags/' + alcoholic_tbl_name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/consumption_alcoholic_2023/08/30 07:41:42.csv'
+[2023-08-30T07:41:42.889+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=process_sale_data, task_id=create_result, execution_date=20230830T074139, start_date=20230830T074142, end_date=20230830T074142
+[2023-08-30T07:41:42.898+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 56 for task create_result ([Errno 2] No such file or directory: '/opt/airflow/dags/consumption_alcoholic_2023/08/30 07:41:42.csv'; 2582)
+[2023-08-30T07:41:42.914+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-30T07:41:42.933+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

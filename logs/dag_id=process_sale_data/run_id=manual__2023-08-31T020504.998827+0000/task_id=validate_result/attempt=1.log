@@ -1,0 +1,29 @@
+[2023-08-31T02:05:05.948+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sale_data.validate_result manual__2023-08-31T02:05:04.998827+00:00 [queued]>
+[2023-08-31T02:05:05.959+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sale_data.validate_result manual__2023-08-31T02:05:04.998827+00:00 [queued]>
+[2023-08-31T02:05:05.959+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-31T02:05:05.973+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): validate_result> on 2023-08-31 02:05:04.998827+00:00
+[2023-08-31T02:05:05.977+0000] {standard_task_runner.py:57} INFO - Started process 398 to run task
+[2023-08-31T02:05:05.979+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'process_sale_data', 'validate_result', 'manual__2023-08-31T02:05:04.998827+00:00', '--job-id', '125', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmplbf0xakw']
+[2023-08-31T02:05:05.981+0000] {standard_task_runner.py:85} INFO - Job 125: Subtask validate_result
+[2023-08-31T02:05:06.025+0000] {task_command.py:410} INFO - Running <TaskInstance: process_sale_data.validate_result manual__2023-08-31T02:05:04.998827+00:00 [running]> on host 888526fa4a36
+[2023-08-31T02:05:06.106+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sale_data' AIRFLOW_CTX_TASK_ID='validate_result' AIRFLOW_CTX_EXECUTION_DATE='2023-08-31T02:05:04.998827+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-31T02:05:04.998827+00:00'
+[2023-08-31T02:05:06.113+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-08-31T02:05:06.116+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/py_callables.py", line 68, in validate_result
+    alcoholic_tbl_rows = cursor.execute("SELECT COUNT(*) FROM " + alcoholic_tbl_name + "WHERE to_char(to_date(pipeline_exc_datetime, 'YYYY/MM/DD HH:mm:ss'), 'YYYYMMDD) = " + exec_date)
+psycopg2.errors.SyntaxError: syntax error at or near "("
+LINE 1: ...onsumption_alcoholic_20230831WHERE to_char(to_date(pipeline_...
+                                                             ^
+
+[2023-08-31T02:05:06.276+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=process_sale_data, task_id=validate_result, execution_date=20230831T020504, start_date=20230831T020505, end_date=20230831T020506
+[2023-08-31T02:05:06.285+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 125 for task validate_result (syntax error at or near "("
+LINE 1: ...onsumption_alcoholic_20230831WHERE to_char(to_date(pipeline_...
+                                                             ^
+; 398)
+[2023-08-31T02:05:06.313+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-31T02:05:06.329+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

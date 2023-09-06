@@ -1,0 +1,14 @@
+[2023-08-30T06:23:27.884+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sale_data.check_file_exist manual__2023-08-30T06:23:26.575933+00:00 [queued]>
+[2023-08-30T06:23:27.895+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sale_data.check_file_exist manual__2023-08-30T06:23:26.575933+00:00 [queued]>
+[2023-08-30T06:23:27.896+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-30T06:23:27.909+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): check_file_exist> on 2023-08-30 06:23:26.575933+00:00
+[2023-08-30T06:23:27.913+0000] {standard_task_runner.py:57} INFO - Started process 392 to run task
+[2023-08-30T06:23:27.917+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'process_sale_data', 'check_file_exist', 'manual__2023-08-30T06:23:26.575933+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpy46dy8se']
+[2023-08-30T06:23:27.921+0000] {standard_task_runner.py:85} INFO - Job 19: Subtask check_file_exist
+[2023-08-30T06:23:27.969+0000] {task_command.py:410} INFO - Running <TaskInstance: process_sale_data.check_file_exist manual__2023-08-30T06:23:26.575933+00:00 [running]> on host 888526fa4a36
+[2023-08-30T06:23:28.042+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sale_data' AIRFLOW_CTX_TASK_ID='check_file_exist' AIRFLOW_CTX_EXECUTION_DATE='2023-08-30T06:23:26.575933+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-30T06:23:26.575933+00:00'
+[2023-08-30T06:25:23.878+0000] {local_task_job_runner.py:292} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2023-08-30T06:25:23.881+0000] {process_utils.py:135} INFO - Sending Signals.SIGTERM to group 392. PIDs of all processes in the group: [392]
+[2023-08-30T06:25:23.882+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 392
+[2023-08-30T06:25:23.884+0000] {taskinstance.py:1517} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-08-30T06:25:23.936+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=392, status='terminated', exitcode=0, started='06:23:27') (392) terminated with exit code 0

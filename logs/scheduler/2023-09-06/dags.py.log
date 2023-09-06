@@ -1,0 +1,144 @@
+[2023-09-06T04:31:51.831+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:31:51.833+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:31:51.834+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:31:51.834+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:31:52.908+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:31:52.908+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:31:53.060+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:31:53.217+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:31:53.216+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:31:53.240+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:31:53.240+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:31:53.262+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 1.437 seconds
+[2023-09-06T04:32:23.359+0000] {processor.py:157} INFO - Started process (PID=84) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:32:23.361+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:32:23.362+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:32:23.362+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:32:23.927+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:32:23.926+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:32:23.983+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:32:24.002+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:32:24.001+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:32:24.021+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:32:24.021+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:32:24.043+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.690 seconds
+[2023-09-06T04:32:54.256+0000] {processor.py:157} INFO - Started process (PID=128) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:32:54.258+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:32:54.259+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:32:54.259+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:32:54.925+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:32:54.924+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:32:54.985+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:32:55.006+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:32:55.005+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:32:55.028+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:32:55.028+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:32:55.045+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.793 seconds
+[2023-09-06T04:33:25.273+0000] {processor.py:157} INFO - Started process (PID=181) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:33:25.274+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:33:25.275+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:33:25.275+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:33:25.680+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:33:25.679+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:33:25.736+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:33:25.752+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:33:25.752+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:33:25.772+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:33:25.772+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:33:25.788+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.518 seconds
+[2023-09-06T04:33:56.139+0000] {processor.py:157} INFO - Started process (PID=225) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:33:56.150+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:33:56.152+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:33:56.152+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:33:56.575+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:33:56.573+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:33:56.623+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:33:56.639+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:33:56.639+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:33:56.659+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:33:56.659+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:33:56.678+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.542 seconds
+[2023-09-06T04:34:26.832+0000] {processor.py:157} INFO - Started process (PID=278) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:34:26.833+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:34:26.834+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:34:26.834+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:34:27.210+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:34:27.209+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:34:27.261+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:34:27.278+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:34:27.278+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:34:27.297+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:34:27.297+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:34:27.314+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.486 seconds
+[2023-09-06T04:34:57.520+0000] {processor.py:157} INFO - Started process (PID=322) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:34:57.522+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:34:57.523+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:34:57.523+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:34:57.894+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:34:57.893+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:34:57.956+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:34:57.976+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:34:57.975+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:34:57.998+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:34:57.998+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:34:58.017+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.500 seconds
+[2023-09-06T04:35:28.208+0000] {processor.py:157} INFO - Started process (PID=375) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:35:28.209+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:35:28.210+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:35:28.210+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:35:28.577+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:35:28.576+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:35:28.628+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:35:28.643+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:35:28.643+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:35:28.664+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:35:28.664+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:35:28.682+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.477 seconds
+[2023-09-06T04:35:58.879+0000] {processor.py:157} INFO - Started process (PID=419) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:35:58.880+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:35:58.881+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:35:58.881+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:35:59.278+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:35:59.276+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:35:59.329+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:35:59.347+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:35:59.346+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:35:59.369+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:35:59.369+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:35:59.387+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.510 seconds
+[2023-09-06T04:36:29.657+0000] {processor.py:157} INFO - Started process (PID=472) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:36:29.659+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:36:29.659+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:36:29.659+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:36:30.051+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:36:30.050+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:36:30.102+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:36:30.118+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:36:30.118+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:36:30.138+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:36:30.138+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:36:30.155+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.501 seconds
+[2023-09-06T04:37:00.485+0000] {processor.py:157} INFO - Started process (PID=525) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:37:00.487+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:37:00.488+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:37:00.488+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:37:00.903+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:37:00.902+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:37:00.958+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:37:00.977+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:37:00.976+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:37:01.004+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:37:01.004+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:37:01.020+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.538 seconds
+[2023-09-06T04:37:31.231+0000] {processor.py:157} INFO - Started process (PID=569) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:37:31.232+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:37:31.232+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:37:31.232+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:37:31.618+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:37:31.617+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:37:31.673+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:37:31.689+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:37:31.689+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:37:31.709+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:37:31.709+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:37:31.728+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.500 seconds
+[2023-09-06T04:38:02.021+0000] {processor.py:157} INFO - Started process (PID=622) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:38:02.025+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:38:02.028+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:38:02.027+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:38:02.680+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:38:02.677+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:38:02.775+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:38:02.805+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:38:02.805+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:38:02.841+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:38:02.840+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:38:02.875+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.858 seconds
+[2023-09-06T04:38:33.035+0000] {processor.py:157} INFO - Started process (PID=666) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:38:33.037+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:38:33.038+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:38:33.038+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:38:33.781+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:38:33.778+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:38:33.856+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:38:33.881+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:38:33.881+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:38:33.912+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:38:33.912+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:38:33.944+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.913 seconds
+[2023-09-06T04:39:04.054+0000] {processor.py:157} INFO - Started process (PID=719) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:39:04.056+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:39:04.057+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:39:04.056+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:39:04.438+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:39:04.437+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:39:04.489+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:39:04.506+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:39:04.505+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:39:04.527+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:39:04.527+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:39:04.544+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.495 seconds
+[2023-09-06T04:39:34.727+0000] {processor.py:157} INFO - Started process (PID=763) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:39:34.728+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:39:34.729+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:39:34.729+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:39:35.130+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:39:35.129+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:39:35.181+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:39:35.196+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:39:35.196+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:39:35.214+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:39:35.214+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:39:35.232+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.508 seconds
+[2023-09-06T04:40:05.436+0000] {processor.py:157} INFO - Started process (PID=817) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:40:05.437+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:40:05.438+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:40:05.438+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:40:05.812+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:40:05.811+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:40:05.865+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:40:05.881+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:40:05.881+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:40:05.902+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:40:05.902+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:40:05.920+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.487 seconds
+[2023-09-06T04:40:36.095+0000] {processor.py:157} INFO - Started process (PID=861) to work on /opt/airflow/dags/dags.py
+[2023-09-06T04:40:36.097+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-09-06T04:40:36.098+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:40:36.098+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-09-06T04:40:36.510+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:40:36.509+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-09-06T04:40:36.568+0000] {processor.py:836} INFO - DAG(s) dict_keys(['process_sale_data']) retrieved from /opt/airflow/dags/dags.py
+[2023-09-06T04:40:36.587+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:40:36.586+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-09-06T04:40:36.607+0000] {logging_mixin.py:149} INFO - [2023-09-06T04:40:36.607+0000] {dag.py:3490} INFO - Setting next_dagrun for process_sale_data to None, run_after=None
+[2023-09-06T04:40:36.627+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.535 seconds

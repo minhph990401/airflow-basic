@@ -1,0 +1,23 @@
+[2023-08-31T04:02:32.060+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sale_data.log_info manual__2023-08-31T04:02:23.005684+00:00 [queued]>
+[2023-08-31T04:02:32.073+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sale_data.log_info manual__2023-08-31T04:02:23.005684+00:00 [queued]>
+[2023-08-31T04:02:32.074+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-31T04:02:32.091+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): log_info> on 2023-08-31 04:02:23.005684+00:00
+[2023-08-31T04:02:32.097+0000] {standard_task_runner.py:57} INFO - Started process 6213 to run task
+[2023-08-31T04:02:32.102+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'process_sale_data', 'log_info', 'manual__2023-08-31T04:02:23.005684+00:00', '--job-id', '191', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmp5bz54lpj']
+[2023-08-31T04:02:32.104+0000] {standard_task_runner.py:85} INFO - Job 191: Subtask log_info
+[2023-08-31T04:02:32.153+0000] {task_command.py:410} INFO - Running <TaskInstance: process_sale_data.log_info manual__2023-08-31T04:02:23.005684+00:00 [running]> on host 888526fa4a36
+[2023-08-31T04:02:32.286+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sale_data' AIRFLOW_CTX_TASK_ID='log_info' AIRFLOW_CTX_EXECUTION_DATE='2023-08-31T04:02:23.005684+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-31T04:02:23.005684+00:00'
+[2023-08-31T04:02:32.441+0000] {logging_mixin.py:149} INFO - Task start time: 2023/08/31 04:02:31
+[2023-08-31T04:02:32.442+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/py_callables.py", line 105, in log_task_info
+    print("Task end time: {end_date}".format(end_date = end_date))
+NameError: name 'end_date' is not defined
+[2023-08-31T04:02:32.457+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=process_sale_data, task_id=log_info, execution_date=20230831T040223, start_date=20230831T040232, end_date=20230831T040232
+[2023-08-31T04:02:32.469+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 191 for task log_info (name 'end_date' is not defined; 6213)
+[2023-08-31T04:02:32.515+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-31T04:02:32.529+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

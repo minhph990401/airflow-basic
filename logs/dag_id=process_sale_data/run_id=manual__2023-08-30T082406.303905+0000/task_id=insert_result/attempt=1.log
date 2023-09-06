@@ -1,0 +1,31 @@
+[2023-08-30T08:24:10.973+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_sale_data.insert_result manual__2023-08-30T08:24:06.303905+00:00 [queued]>
+[2023-08-30T08:24:10.981+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_sale_data.insert_result manual__2023-08-30T08:24:06.303905+00:00 [queued]>
+[2023-08-30T08:24:10.982+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-08-30T08:24:10.995+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): insert_result> on 2023-08-30 08:24:06.303905+00:00
+[2023-08-30T08:24:11.000+0000] {standard_task_runner.py:57} INFO - Started process 390 to run task
+[2023-08-30T08:24:11.002+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'process_sale_data', 'insert_result', 'manual__2023-08-30T08:24:06.303905+00:00', '--job-id', '93', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpxiy07gbw']
+[2023-08-30T08:24:11.005+0000] {standard_task_runner.py:85} INFO - Job 93: Subtask insert_result
+[2023-08-30T08:24:11.044+0000] {task_command.py:410} INFO - Running <TaskInstance: process_sale_data.insert_result manual__2023-08-30T08:24:06.303905+00:00 [running]> on host 888526fa4a36
+[2023-08-30T08:24:11.122+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_sale_data' AIRFLOW_CTX_TASK_ID='insert_result' AIRFLOW_CTX_EXECUTION_DATE='2023-08-30T08:24:06.303905+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-30T08:24:06.303905+00:00'
+[2023-08-30T08:24:11.177+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-08-30T08:24:11.328+0000] {postgres.py:159} INFO - Running copy expert: COPY consumption_alcoholic_20230830 FROM '/opt/***/dags/consumption_alcoholic_20230830.csv' WITH CSV HEADER DELIMITER AS ',';, filename: /opt/***/dags/consumption_alcoholic_20230830.csv
+[2023-08-30T08:24:11.337+0000] {base.py:73} INFO - Using connection ID 'postgres' for task execution.
+[2023-08-30T08:24:11.342+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/py_callables.py", line 60, in insert_result
+    ,alcoholic_file_name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/hooks/postgres.py", line 167, in copy_expert
+    cur.copy_expert(sql, file)
+psycopg2.errors.UndefinedFile: could not open file "/opt/***/dags/consumption_alcoholic_20230830.csv" for reading: No such file or directory
+HINT:  COPY FROM instructs the PostgreSQL server process to read a file. You may want a client-side facility such as psql's \copy.
+
+[2023-08-30T08:24:11.355+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=process_sale_data, task_id=insert_result, execution_date=20230830T082406, start_date=20230830T082410, end_date=20230830T082411
+[2023-08-30T08:24:11.366+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 93 for task insert_result (could not open file "/opt/***/dags/consumption_alcoholic_20230830.csv" for reading: No such file or directory
+HINT:  COPY FROM instructs the PostgreSQL server process to read a file. You may want a client-side facility such as psql's \copy.
+; 390)
+[2023-08-30T08:24:11.375+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-30T08:24:11.390+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
