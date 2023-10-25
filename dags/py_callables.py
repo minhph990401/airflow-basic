@@ -10,9 +10,9 @@ exec_date = datetime.datetime.now().strftime("%Y%m%d")
 alcoholic_tbl_name = 'consumption_alcoholic_{pipeline_exc_date}'.format(pipeline_exc_date = exec_date)
 cereals_bakery_tbl_name = 'consumption_cereals_bakery_{pipeline_exc_date}'.format(pipeline_exc_date = exec_date)
 meats_poultry_tbl_name = 'consumption_meats_poultry_{pipeline_exc_date}'.format(pipeline_exc_date = exec_date)
-alcoholic_file_name = '/opt/airflow/dags/consumption_alcoholic_{exec_datetime}.csv'.format(exec_datetime = exec_date)
-cereals_bakery_file_name = '/opt/airflow/dags/consumption_cereals_bakery_{exec_datetime}.csv'.format(exec_datetime = exec_date)
-meats_poultry_file_name = '/opt/airflow/dags/consumption_meats_poultry_{exec_datetime}.csv'.format(exec_datetime = exec_date)
+alcoholic_file_name = '/opt/airflow/data/consumption_alcoholic_{exec_datetime}.csv'.format(exec_datetime = exec_date)
+cereals_bakery_file_name = '/opt/airflow/data/consumption_cereals_bakery_{exec_datetime}.csv'.format(exec_datetime = exec_date)
+meats_poultry_file_name = '/opt/airflow/data/consumption_meats_poultry_{exec_datetime}.csv'.format(exec_datetime = exec_date)
 pg_hook = PostgresHook.get_hook('postgres')
 
 def check_file_exists(ti):
@@ -33,17 +33,17 @@ def check_file_exists(ti):
 
 
 def process_raw_data():
-    df_raw = pd.read_csv('/opt/airflow/dags/consumption_yyyymmdd.csv', header=0)
+    df_raw = pd.read_csv('/opt/airflow/data/consumption_yyyymmdd.csv', header=0)
     df_needed = df_raw[df_raw.Category.isin(['Alcoholic beverages', 'Cereals and bakery products', 'Meats and poultry'])]
     df_needed.Month.astype(str)
     df_needed.Month = pd.to_datetime(df_needed['Month']).dt.strftime("%Y/%m/%d")
     df_needed['Pipeline_exc_datetime'] = exec_datetime
 
-    df_needed.to_csv('/opt/airflow/dags/staging_table.csv', index=False)
+    df_needed.to_csv('/opt/airflow/data/staging_table.csv', index=False)
 
 
 def insert_result():
-    df_staging = pd.read_csv('/opt/airflow/dags/staging_table.csv')
+    df_staging = pd.read_csv('/opt/airflow/data/staging_table.csv')
     df_alcoholic = df_staging[df_staging.Category == 'Alcoholic beverages']
     df_cereals_bakery = df_staging[df_staging.Category == 'Cereals and bakery products']
     df_meats_poultry = df_staging[df_staging.Category == 'Meats and poultry']
